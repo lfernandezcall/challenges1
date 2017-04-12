@@ -1,9 +1,13 @@
 //Write a program that writes in the console all the multiples of 23 less than 500 and at the end writes the sum of all of them
-function calculation() {
-var array = [];
-var temp = 23;
-var sum = null;
 
-for (var = i; temp < 500)
+// Calculation
 
-calculation();
+function multiples23() {
+  var elements = "Elements: "
+  var sum = 0
+  for (var i=23; i<500; i+=23) {
+    elements += i + " "
+    sum += i
+  }
+  return elements + '\n' + 'Suma: ' + sum
+}
